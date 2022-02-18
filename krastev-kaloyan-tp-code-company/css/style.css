@@ -1,0 +1,164 @@
+/* css code by Kaloyan KRASTEV */
+/* kaloyansen@gmail.com */
+
+@import "stylesheet.css";
+
+@import url('https://fonts.googleapis.com/css?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Jost&display=swap');
+@keyframes fadein {from {opacity: 0} to {opacity: 1}}
+@keyframes slidex {from {transform: translateX(-100vw);} to {transform: translateX(0vw);}}
+@keyframes slidey {from {transform: translateY(-100vh);} to {transform: translateX(0vw);}}
+@keyframes slide {
+	from { transform: translateX(-100vh) translateY(-100vw); }
+	to { transform: translateX(0) translateY(0); }
+}
+
+
+html { height: 100%;} 
+body { height: 100%; margin: 0; animation: slide 0.6s;
+	 font-family: 'Jost', sans-serif; }
+h2 { font-family: 'Outfit', sans-serif; font-size: 40px; line-height: 1.3;}
+h4 { font-family: 'Questrial', sans-serif; font-size: 18px; line-height: 1.3;}
+small {
+	display: block;
+	font-family: 'Outfit', sans-serif;
+	font-size: 10px;
+	line-height: 1.6;
+}
+
+.gridcont {
+	display: grid;
+	background-color: black;
+	grid-template-areas:
+	'navar  navar  navar  navar'
+	'headar headar headar headar'
+	'artar  artar  artar  artar'	
+	'secar  secar  secar  secar'
+	'footar footar footar footar';
+
+}
+
+.gridcont > * { /* all children */
+	padding: 3vw 20vw;
+	text-align: center;
+	color: grey;
+	transition: all 2s, 1s;/*
+	transition: color 2s 1s;
+	transition: background-color 5s 1s;
+	transition: font-weight 2s 1s;*/
+}
+
+nav {  
+	grid-area: navar;
+	background-color: #0a3347;
+}
+
+header {
+	grid-area: headar;
+	background-image: url('../img/landscape.webp');
+	background-color: black;
+	background-size: cover;
+	padding-bottom: 6vw;	
+}
+
+article {
+	grid-area: artar;	
+	background-color: white;
+}
+
+section {
+	grid-area: secar;
+	background-color: #3fad88;
+}
+
+footer {
+	grid-area: footar;
+	background-color: black;
+	margin-bottom: 30vw;
+	font-weight: 100;
+}
+
+article img, section img, footer img {
+	display: inline-block;
+	border-radius: 50%;
+	height: 9vw;
+	width: auto;
+	margin: auto 3vw;
+}
+
+section img {	margin: auto 2.04vw; }
+
+hr {
+	width: 30vw;
+	margin: 2vw auto;
+	border: 0.1px solid white;
+	background-color: #0a3347; /* kind of blue */
+	height: 0.5px;
+}
+
+footer hr { width: 60vw; }
+footer form {	margin-bottom: -2.66vw;}
+
+nav button {
+	color: white;
+	background-color: #0a3347;
+	font-size: 12px;
+	font-family: 'Jost', sans-serif;
+	border: 0;
+	margin-left: 1vw;
+}
+
+select, .pseudoinput {
+	border: 0.1vw solid white;
+	border-radius: 3vw;
+	color: white;
+	background-color: 3c6076;
+	background-color: transparent;
+	width: 18vw;
+	padding: auto 2vw;
+	margin: 3vw auto;
+	text-align: center; 
+	text-decoration: none;
+	font-size: 12px;
+	font-family: 'Jost', sans-serif;
+}
+
+#moliv { width: 2vw;}
+.column { display: inline-block; }
+.goleft, .goright { margin-top: 1vw; float: right; }
+.goleft { float: left; }
+
+.soc1 { margin-left: -11vw; }
+.social {
+	border: 0px double blue;
+	height: 2vw;
+	width: auto;
+	margin: 0;
+}
+
+.pseudoinput {
+	color: grey;
+	background-color: white;
+	margin: 0.33vw 7vw;
+	width: 33vw;
+}
+
+/*
+.gridcont:hover { display: grid; }
+
+.gridcont > *:hover { width: 100%; }
+*/
+header:hover { color: white; }
+article:hover { color: black; }
+section:hover { color: white; }
+footer:hover { color: white; background-color: #23313a; font-weight: 900; }
+a:hover { border: 1.11vw solid transparent; }
+button:hover, button:focus {
+	color: gray;
+	background-color: #1f455a;
+	cursor: pointer;
+	border-radius: 0vw;  
+}
+
+
