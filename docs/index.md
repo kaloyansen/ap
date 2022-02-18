@@ -1,5 +1,5 @@
 # apformation [en ligne](https://freeshell.de/morla/ap)
-# apformation [en github](index.php)
+# apformation [en github](../ap/index.php)
 
 ### Kaloyan KRASTEV
 
