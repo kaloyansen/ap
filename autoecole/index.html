@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!----------------------^
+code by Kaloyan KRASTEV |
+kaloyansen@gmail.com    |
+\----------------------->
+
+<html lang = 'fr'>
+
+  <head>
+    <title>Auto Ecole DUCHEMIN</title>
+ 
+ 	<meta charset = "utf-8">
+  	<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+  	<meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<meta name = "description" content = "auto, moto, bateau, permis, A1, A2, BEA, Côtier">
+  	<meta name = "author" content = "Auto Ecole DUCHEMIN">
+
+  	<link rel = "icon" type = "image/x-icon" href = "favicon.ico" />
+  	<link rel = "SHORTCUT ICON" href = "./favicon.ico" />
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https://fonts.googleapis.com/css2?family=Jost:wght@100;400&family=Train+One&display=swap" rel = "stylesheet">
+    <link rel = "stylesheet" href = "./css/style.css">
+  </head>
+
+  <body class = "gridcont">
+  	<!-- j'ai voulu faire seulement en html + css mais je n'ai pas trouvé comment dynamiser le site correctement -->
+  	<!-- je ne suis pas certain si cela est possible - le minimum est une petite javascript fonction -->
+	<script src = "./js/set.js"></script>
+
+    <header>
+      Tél : 060659599 <br>
+      Fax : 158465166 <br>
+      Mail: kaloyansen@gmail.com<br><br>
+      45 rue Houique Soixantaine<br>
+      36000 Nice
+    </header>
+    
+    <section id = "output"><h1>o</h1></section>
+
+    <nav>
+      <button id = "ACCEUIL" onClick = "setter('ACCEUIL', 'output', 'dynatext');">ACCEUIL</button>
+      <button id = "AUTO" onClick = "setter('AUTO', 'output', 'dynatext');">AUTO</button>
+      <button id = "MOTO" onClick = "setter('MOTO', 'output', 'dynatext');">MOTO</button>
+      <button id = "BATEAU" onClick = "setter('BATEAU', 'output', 'dynatext');">BATEAU</button>
+      <button id = "CONTACT" onClick = "setter('CONTACT', 'output', 'dynatext');">CONTACT</button>
+	  <button onclick = "alert(screen.width + 'x' + screen.height)">screen size</button>
+
+      <hr>
+    </nav>
+    
+    <div class = "manifest" id = "dynatext">
+      <h2>Prêt(e) pour une expérience de conduit complète ?</h2>
+      <h5>Pour apprendre à conduir ou naviguer notre auto-bateau école
+  	vous reçoit du lundi au samedi. Notre professionnels vous acompagne
+  	et vous conseille tout le long de la formation
+  	pour que le jour de l'examen vous soyez au point.</h5>
+      <h5>Pour plus d'information contactez nous !</h5>
+    </div>
+
+    <div class = "promo">
+      PROMOTIONS 	
+    </div>
+
+    <article class = "art1">
+      <h2 title = "HT"><sup><small>€</small></sup> 670</h2>
+      <a title = "conduire"
+         href = "./img/conduire.jpg"><img src = "./img/conduire.jpg"
+                                          alt = "promo1"/></a>
+      <h3>Permis A1/A2</h3><br>
+      <h4>Inscription</h4>
+      <h4>Forfait Code</h4>
+      <h4>20 heures de conduite</h4>
+      <h4>Présentation pratique</h4><br>
+      <a title = "send mail"
+         href = "mailto:kaloyansen@gmail.com">Nous contacter</a>  			 		
+    </article>
+    <article class = "art2">
+      <h2 title = "HT"><sup><small>€</small></sup> 770</h2>
+      <a title = "permis"
+         href = "./img/permis.jpg"><img src = "./img/permis.jpg"
+                                        alt = "promo2"/></a>
+      <h3>Permis BEA</h3><br>
+      <h4>Inscription</h4>
+      <h4>Forfat Code</h4>
+      <h4>Evaluation préalable</h4>
+      <h4>Examen</h4><br>
+      <a title = "send mail"
+         href = "mailto:kaloyansen@gmail.com">Nous contacter</a>
+    </article>
+    <article class = "art3">
+      <h2 title = "HT"><sup><small>€</small></sup> 295</h2>
+      <a title = "moto"
+         href = "./img/moto.jpg"><img src = "./img/moto.jpg"
+                                      alt = "promo3"/></a>
+      <h3>Permis Côtier</h3><br>
+      <h4>16 ans minimum</h4>
+      <h4>8h de théorique</h4>
+      <h4>3h40 de pratique</h4>
+      <h4>Examen</h4><br>
+      <a title = "send mail"
+         href = "mailto:kaloyansen@gmail.com">Nous contacter</a>  	
+    </article>
+    <article class = "art4">
+      <h2 title = "HT"><sup><small>€</small></sup> 1260</h2>
+      <a title = "bateau"
+         href = "./img/bateau.jpg"><img src = "./img/bateau.jpg"
+                                        alt = "promo4"/></a>
+      <h3>Permis bateau</h3><br>
+      <h4>Inscription/Fournitures</h4>
+      <h4>Forfait Code</h4>
+      <h4>20h de conduite</h4>
+      <h4>Evaluation préalable</h4><br>
+      <a title = "send mail"
+         href = "mailto:kaloyansen@gmail.com">Nous contacter</a>  	
+    </article>
+    
+    <footer>
+      2012/2022 tous droit réservés Auto Ecole DUCHEMIN / SIRET 6454686745648464546
+      <button title = "facebook"
+			  onclick = "alert('je déteste facebook')"><img src = "./img/facebook.png"
+															alt = "facebook"/>
+      </button>
+    </footer>
+  </body>
+</html>

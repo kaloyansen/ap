@@ -1,3 +1,12 @@
+/ponchant-eric-javascript-exercices/
+.project
+.settings/
+login
+jsex
+code
+read.me
+del.me
+delme
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

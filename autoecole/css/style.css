@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {    background-color: black;    }
+body {
+    background-color: orangered;    
+    overflow-x: auto;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.66vw;
+    height: 100%;
+    /* 
+    color: Tomato;
+    background-color: LightGray;
+    color: #ffffff;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Courier New", Courier, monospace;
+    font-family: "Sofia", sans-serif;
+    font-mamily: 'Train One', cursive;
+	test link
+   */
+}
+
+
+
+.gridcont {
+    display: grid;
+    width: 1100px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    grid-template-areas:
+	'headar headar headar headar'
+	'navar  navar  navar  navar'
+	'secar  secar  secar  secar'
+	'manar  manar  manar  manar'
+	'promar promar promar promar'
+	'artar1 artar2 artar3 artar4'
+	'footar footar footar footar';
+	grid-gap: 0;
+  	transition: all 1s;
+}
+
+header {
+    grid-area: headar;
+    height: 9vw;
+    background-image: url('../img/logo.svg');
+    background-color: black;
+    color: white;
+    background-size: 100% 100%;
+    margin-left: -30vw;
+    padding: 1vw 11vw 1vw 11vw;	
+    text-align: right;
+    font-size: 1vw;
+}
+
+nav {
+    grid-area: navar;
+    background-color: black;
+    padding: 1vw 11vw 0vw 11vw;	
+    text-align: left;
+    height: 8vw;	
+}
+
+nav button {
+    color: white;
+    background-color: black;
+    height: 100%;
+    width: 8vw;
+    margin-right: 2vw;
+    padding: 0;
+    font-size: 1.2vw;
+    outline: none; 
+}
+
+nav button:focus {
+    color: black;
+    font-weight: bold;
+    background-color: white;
+}
+
+nav button:hover {
+    color: black;
+    background-color: orangered;
+}
+
+
+section {
+    grid-area: secar;
+    height: 40vw;
+    
+    background-image: url('../img/permis.jpg');
+    background-size: cover;
+    background-color: orangered;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: padding-box;
+    margin: 0vw 11vw 0vw 11vw;
+    padding: 0 0 0 0;	
+}
+
+.manifest {
+    grid-area: manar;
+    font-size: 1.4vw;
+    background-color: white;
+    color: black;
+    text-align: center;
+    margin: 0vw 11vw 1vw 11vw;
+    padding: 2vw 0vw 1vw 0vw;	
+}
+
+.promo {
+    grid-area: promar;
+    text-align: left;
+    font-size: 2vw;
+    color: white;
+    margin: 3vw 11vw 3vw 11vw; 
+    border-bottom: 3px double white; 
+    line-height: 0; 
+}
+
+.art1 { grid-area: artar1; margin-left: 11vw; }
+.art2 { grid-area: artar2; }
+.art3 { grid-area: artar3; }
+.art4 { grid-area: artar4; margin-right: 11vw; }
+
+article {
+    background-color: white;
+    width: 18vw;
+    padding: 0 0 5vw 0;
+    margin: 0 1vw 5vw 0;
+    text-align: center;
+}
+
+article h2, h4 { color: gray; }
+article img {
+    width: 100%;
+    height: 15vw;
+    padding: 0;
+    margin: 0;
+}
+
+article a[title = "send mail"] {
+    color: white;
+    background-color: orangered;
+    text-decoration: none;
+    padding: 1vw;
+    margin: 1vw;
+    font-weight: bold;
+}
+
+footer {
+    grid-area: footar;
+    color: white;
+    background-color: black;
+    height: 7vh;
+    font-size: 1vw;
+    font-weight: bold;
+    padding: 3vw 11vw 0vw 11vw;
+    align-items: center;	
+}
+
+footer img,
+footer button {
+	background-color: black;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	height: 3vw;
+	float: right;
+}
+
+
+@media screen and (max-width: 800px) {
+    article { padding: 0 0 5vw 0; width: 25vw;}
+    .art3 { display: none; }
+    .gridcont {
+        gap: 0;
+        grid-template-areas:
+	    'headar headar headar'
+	    'navar  navar  navar'
+	    'secar  secar  secar'
+	    'manar  manar  manar'
+	    'promar promar promar'
+	    'artar1 artar2 artar4'
+	    'footar footar footar';
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .art1 { margin-left: 11vw; }
+    .art2 { margin-right: 0vw; }
+    .art3 { display: grid; margin-left: 11vw; }
+    .art4 { margin-right: 0vw; }
+    article { margin-right: 0vw; width: 78%; }
+    .gridcont {
+        grid-template-areas:
+	    'headar headar'
+	    'navar  navar'
+	    'secar  secar'
+	    'manar  manar'
+	    'promar promar'
+	    'artar1 artar2'
+	    'artar3 artar4'
+	    'footar footar';
+    }
+}
+
+
+@media screen and (max-width: 300px) {
+    article { margin: 0 11vw; width: 78%; }
+
+    .gridcont {
+        grid-template-areas:
+	    'headar'
+	    'navar'
+	    'secar'
+	    'manar'
+	    'promar'
+	    'artar1'
+	    'artar2'
+	    'artar3'
+	    'artar4'
+	    'footar';
+    }
+}
+
+
+
+
