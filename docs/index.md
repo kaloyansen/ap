@@ -3,8 +3,8 @@
 
 ### Kaloyan KRASTEV
 
-- [auto école](../autoecole/index.html)
-- [code company](../krastev-kaloyan-tp-code-company/index.html)
-- [javascript exercices](../krastev-kaloyan-javascript-exercices/index.html)
-- [javascript évaluation](krastev-kaloyan-eval-javascript)
+- [auto école](https://freeshell.de/morla/ap/moto)
+- [code company](https://freeshell.de/morla/ap/code)
+- [javascript exercices](https://freeshell.de/morla/ap/jsex)
+- [javascript évaluation](https://freeshell.de/morla/ap/login)
  
