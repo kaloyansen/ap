@@ -1,10 +1,10 @@
 # apformation [en ligne](https://freeshell.de/morla/ap)
-# apformation [en github](index.php)
 
 ### Kaloyan KRASTEV
 
-- [auto école](https://freeshell.de/morla/ap/moto)
-- [code company](https://freeshell.de/morla/ap/code)
-- [javascript exercices](https://freeshell.de/morla/ap/jsex)
-- [javascript évaluation](https://freeshell.de/morla/ap/login)
+- [auto école](autoecole/index.html)
+- [code company](krastev-kaloyan-tp-code-company/index.html)
+- [javascript exercices](krastev-kaloyan-javascript-exercices/index.html)
+- [javascript exercices 2](krastev-kaloyan-javascript-exercices/interface2.html)
+- [javascript évaluation](krastev-kaloyan-eval-javascript/index.html)
 [back](../.)
